@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "My-dream": {
+    "CreateAnInterest": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/My-dream",
+            "outputPath": "dist/CreateAnInterest",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "My-dream:build"
+            "browserTarget": "CreateAnInterest:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "My-dream:build:production"
+              "browserTarget": "CreateAnInterest:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "My-dream:build"
+            "browserTarget": "CreateAnInterest:build"
           }
         },
         "test": {
@@ -110,15 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "My-dream:serve"
+            "devServerTarget": "CreateAnInterest:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "My-dream:serve:production"
+              "devServerTarget": "CreateAnInterest:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "My-dream"
+    }
+  },
+  "defaultProject": "CreateAnInterest",
+  "cli": {
+    "analytics": "d060e974-1eb9-46cf-ae25-841cd0732f51"
+  }
 }
